@@ -2,3 +2,8 @@
   from = "/assets"
   to = "./index.html"
   status = 200
+
+[[redirects]]
+  from = "assets/userIDs.json"
+  to = "./index.html"
+  status = 200
