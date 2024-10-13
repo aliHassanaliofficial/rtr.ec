@@ -13,6 +13,10 @@ function decryptUserID(encryptedText, secretKey) {
 document.getElementById("submitBtn").addEventListener("click", function () {
     const inputVal = document.getElementById("userID").value;
 
+    if (inputVal === "") {
+        alert("ID field cannot be empty");
+    }
+
     // Fetch the encrypted user IDs from the JSON file
     fetch("./assets/userIDs.json")
         .then(response => {
