@@ -1,4 +1,4 @@
 [[redirects]]
-  from = "/assets/userIDs.json"
+  from = "https://rac-royal-panel.netlify.app/assets/userIDs.json"
   to = "./index.html"
   status = 200
