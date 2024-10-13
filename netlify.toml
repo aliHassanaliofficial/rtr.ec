@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/assets/userIDs.json"
+  to = "./index.html"
+  status = 200
