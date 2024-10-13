@@ -1,0 +1,47 @@
+@media only screen and (max-width: 767px) {
+    .notfound .notfound-404 {
+        height: 142px;
+    }
+
+    .notfound .notfound-404 h1 {
+        font-size: 112px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1022px) {
+    .logo {
+        width: 20% !important;
+    }
+    .log-session-background {
+        background-size: 45%;
+        transform: translateX(21%);
+    }
+}
+
+/*special*/
+
+@media (min-width: 1023px) and (max-width: 1025px) {
+    .logo {
+        width: 10%;
+    }
+
+    .user-picture-area img {
+        width: 190px;
+        height: 190px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo {
+        width: 10% !important;
+    }
+
+    .log-session-background {
+        background-size: 30%;
+        transform: translateX(15%);
+    }
+
+    .verify-area input{
+        width: 30%;
+    }
+}

@@ -1,0 +1,90 @@
+/*main rules*/
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --main-color: #ed0775;
+    --transition: .3s all;
+}
+
+.logo {
+    width: 25%;
+}
+
+footer {
+    position: fixed;
+    left: 50%;
+    top: 99%;
+    transform: translate(-50%, -100%);
+}
+/*end of main rules*/
+
+/*Login session*/
+
+.log-session-background {
+    width: 100%;
+    height: 99vh;
+    background-image: url(../media/static/logo.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    opacity: 0.09;
+    position: fixed;
+    transform: translateX(43%);
+    z-index: 0;
+}
+
+.verify-area {
+    width: 100%;
+    position: absolute;
+    z-index: 9999;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    transition: var(--transition);
+    align-items: center;
+}
+
+.verify-area .input-label {
+    font-size: 1em;
+}
+
+.verify-area input{
+    margin: 15px;
+    padding: 15px;
+    font-size: 18px;
+    font-family: 'Readex Pro', sans-serif;
+    border-radius: 10px;
+    border: 0px;
+    background-color: #f1f1f1;
+    width: 75%;
+    transition: var(--transition);
+}
+
+.verify-area input:focus{
+    border: 1px #ed6407 solid;
+    outline: 0.1px #ed6407;
+    box-shadow: 0.6em 0.6em 1.2em #e9d2e2, -0.5em -0.5em 1em #fff;
+    transition: var(--transition);
+}
+
+.verify-area button{
+    background-color: #f1f1f1;
+    border: 0px;
+    padding: 15px 45px;
+    border-radius: 147px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 5%;
+    transition: var(--transition);
+}
+
+.verify-area button:hover{
+    background-color: var(--main-color);
+    color: white;
+    transition: var(--transition);
+}

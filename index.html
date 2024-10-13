@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renaissance Royal | Board</title>
+    <link rel="icon" href="./media/static/logo.png">
+    <link rel="stylesheet" href="./stylesheets/loader.css">
+    <link rel="stylesheet" href="./stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="./stylesheets/mediaquery.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script defer src="script.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="loader">
+        <div class="pending">
+            <div class="loading">
+                <img src="./media/static/logo.png" alt="" />
+                <div class="loader-line"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="data">
+        <div class="log-session-background"></div>
+
+        <div class="verify-area">
+            <div class="logo-area" style="text-align: center;">
+                <img src="./media/static/clubXrotar.png" alt="" class="logo">
+            </div>
+            <h2 class="input-label">Please enter your <a href="https://my.rotary.org/">myRotary</a> ID</h2>
+            <input type="text" id="userID" placeholder="Enter ID" />
+            <button id="submitBtn">Login</button>
+        </div>
+
+
+
+
+        <footer>
+            ERA Engines &copy; 2024
+        </footer>
+
+    </div>
+    <script>
+        $(window).on('load', function () {
+            $(".loader").fadeToggle(1000);;
+            $(".data").fadeIn(1000);;
+        });
+    </script>
+</body>
+
+</html>
